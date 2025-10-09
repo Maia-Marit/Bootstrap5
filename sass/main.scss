@@ -1,0 +1,11 @@
+// custom variables
+$primary: #c29938;
+$light: #fbf5e5;
+
+$custom-theme-colors: (
+    "altlight": #f2ebfa,
+    "altdark": #522192
+);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
