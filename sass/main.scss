@@ -9,8 +9,17 @@ $light: #fbf5e5;
 $custom-theme-colors: (
     "altlight": #d1e8a0,
     "altdark": #246219,
+    "text-box": #fcebae
 );
 
+.fact-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 650;
+}
+
+.fact-paragraph {
+    font-family: 'Playfair Display', serif;
+    }
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
