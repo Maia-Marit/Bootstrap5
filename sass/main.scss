@@ -1,5 +1,5 @@
 // custom variables
-$primary: #e6ba52;
+$primary: #ffd77b;
 $light: #fbf5e5;
 
 //import the functions and variables
@@ -9,7 +9,7 @@ $light: #fbf5e5;
 $custom-theme-colors: (
     "altlight": #d1e8a0,
     "altdark": #246219,
-    "text-box": #fcebae
+    "text-box": #ffeba5,
 );
 
 .fact-heading {
@@ -20,6 +20,49 @@ $custom-theme-colors: (
 .fact-paragraph {
     font-family: 'Playfair Display', serif;
     }
+
+.bg-text-box {
+    background-color: #c0c0c0; 
+  border: 2px solid #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow:
+    inset -1px -1px #fff,
+    inset 1px 1px #000; 
+  color: #000;
+}
+
+.nav-btn {
+    display: inline-block;
+  background-color: #dcdcdc;
+  border: 2px solid #fff;
+  border-right-color: #888;
+  border-bottom-color: #888;
+  padding: 4px 10px;
+  color: #000 !important;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px #888;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-btn-special {
+    display: inline-block;
+  background-color: $primary;
+  border: 2px solid #fff;
+  border-right-color: #888;
+  border-bottom-color: #888;
+  padding: 6px 12px;
+  color: #000 !important;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px #888;
+  transition: all 0.1s ease-in-out;
+}
+
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 

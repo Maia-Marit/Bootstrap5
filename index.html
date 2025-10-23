@@ -15,7 +15,8 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+  <header class="bg-altlight">
+  <nav class="navbar navbar-expand-md navbar-light py-4">
     <div class="container-xxl">
 
       <!-- navbar brand / title -->
@@ -35,25 +36,26 @@
       <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#topics">About The Book</a>
+            <a class="nav-link nav-btn" href="#topics">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#reviews">Reviews</a>
+            <a class="nav-link nav-btn" href="#reviews">Reviews</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Get in Touch</a>
+            <a class="nav-link nav-btn" href="#contact">Get in Touch</a>
           </li>
           <li class="nav-item d-md-none">
-            <a class="nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link nav-btn" href="#pricing">Pricing</a>
           </li>
           <li class="nav-item ms-2 d-none d-md-inline">
-            <a class="btn btn-secondary" href="#pricing">buy now</a>
+            <a class="nav-btn-special" href="#pricing">Buy Now</a>
           </li>
           
         </ul>
       </div>
     </div>
   </nav>
+  </header>
 
   <!-- main image & intro text -->
   <section id="intro">
@@ -61,10 +63,10 @@
       <div class="row g-4 justify-content-center align-items-center">
         <div class="col-md-5 text-center text-md-start">
           <h1>
-            <div class="display-2">Black-Belt</div>
-            <div class="display-5 text-muted">Your Coding Skills</div>
+            <div class="fact-paragraph">Dandelions</div>
+            <div class="display-6 fact-paragraph text-muted">Flowers From The Sun</div>
           </h1>
-          <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos?</p>
+          <p class="fact-paragraph my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos?</p>
           <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
           <!-- open sidebar / offcanvas -->
           <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
@@ -235,7 +237,7 @@
       <div class="row justify-content-center my-5">
         <div class="col-lg-8">
           <div class="list-group">
-            <div class="list-group-item bg-text-box border border-dark rounded-3 py-3 mb-4">
+            <div class="list-group-item bg-text-box border border-dark rounded-1 py-3 mb-4">
               <div class="pb-2 text-center">
                 <div class="text-altdark">
                   <p>─•~❉᯽❉~•─</p>
@@ -247,7 +249,7 @@
               <br>
             </div>
 
-            <div class="list-group-item bg-text-box border border-dark rounded-3 py-3 mb-4">
+            <div class="list-group-item bg-text-box border border-dark rounded-1 py-3 mb-4">
               <div class="pb-2 text-center">
                 <div class="text-altdark">
                   <p>─•~❉᯽❉~•─</p>
@@ -258,7 +260,7 @@
               <p class="mb-1 text-center fact-paragraph">Their deep roots pull minerals like calcium and potassium to the surface, enriching the soil when they die and decompose.</p>
               <br>
             </div>
-            <div class="list-group-item bg-text-box border border-dark rounded-3 py-3 mb-4">
+            <div class="list-group-item bg-text-box border border-dark rounded-1 py-3 mb-4">
               <div class="pb-2 text-center">
                 <div class="text-altdark">
                   <p>─•~❉᯽❉~•─</p>
@@ -269,7 +271,7 @@
               <p class="mb-1 text-center fact-paragraph">“Dandelion” comes from the French dent de lion — meaning “lions tooth,” referring to the jagged edges of the leaves.</p>
               <br>
             </div>
-            <div class="list-group-item bg-text-box border border-dark rounded-3 py-3 mb-4">
+            <div class="list-group-item bg-text-box border border-dark rounded-1 py-3 mb-4">
               <div class="pb-2 text-center">
                 <div class="text-altdark">
                   <p>─•~❉᯽❉~•─</p>
@@ -280,7 +282,7 @@
               <p class="mb-1 text-center fact-paragraph">Rabbits, guinea pigs, and tortoises love dandelions — they are like the plant version of potato chips for small animals.</p>
               <br>
             </div>
-            <div class="list-group-item bg-text-box border border-dark rounded-3 py-3 mb-4">
+            <div class="list-group-item bg-text-box border border-dark rounded-1 py-3 mb-4">
               <div class="pb-2 text-center">
                 <div class="text-altdark">
                   <p>─•~❉᯽❉~•─</p>
@@ -316,6 +318,7 @@
                 <i class="bi bi-envelope-fill text-secondary"></i>
               </span>
               <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+
               <!-- tooltip -->
               <span class="input-group-text">
                 <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
@@ -329,6 +332,7 @@
                 <i class="bi bi-person-fill text-secondary"></i>
               </span>
               <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+
               <!-- tooltip -->
               <span class="input-group-text">
                 <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
