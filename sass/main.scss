@@ -7,9 +7,11 @@ $light: #fbf5e5;
 @import '../node_modules/bootstrap/scss/variables';
 
 $custom-theme-colors: (
-    "altlight": #d1e8a0,
-    "altdark": #246219,
-    "text-box": #ffeba5,
+    "altlight": #b3daae,
+    "altdark": #2b5039,
+    "text-box": #fdf5d6,
+    "mutedlight": #9dc2a5,
+    "order": #f0c9d3,
 );
 
 .fact-heading {
@@ -55,6 +57,10 @@ $custom-theme-colors: (
   font-family: 'Playfair Display', serif;
   font-size: 16px;
   font-weight: bold;
+}
+
+.offcanvas {
+  z-index: 1061 !important;
 }
 
 
