@@ -63,6 +63,83 @@ $custom-theme-colors: (
   z-index: 1061 !important;
 }
 
+// Mobile adjustments
+
+html, body {
+  overflow-x: hidden; 
+}
+
+section {
+  padding: 40px 20px;
+
+  @media (min-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #main-nav .navbar-nav {
+    text-align: center;
+  }
+
+  #main-nav .nav-item {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  #main-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  #main-nav.collapse {
+    margin-top: 2rem; 
+  }
+
+  #main-nav .nav-item {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.nav-btn-special,
+.btn-lg {
+  width: 100%;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .mx-5 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .card p.d-none.d-lg-block {
+    display: block !important;
+    margin: 0.5rem 0;
+  }
+
+  .accordion-button {
+    font-size: 0.9rem;
+  }
+
+  h1 .display-6 {
+    font-size: 1.5rem;
+  }
+}
 
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
