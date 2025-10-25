@@ -26,9 +26,6 @@ $custom-theme-colors: (
   border: 2px solid #fff;
   border-right-color: #808080;
   border-bottom-color: #808080;
-  box-shadow:
-    inset -1px -1px #fff,
-    inset 1px 1px #000; 
   color: #000;
 }
 
@@ -44,13 +41,12 @@ $custom-theme-colors: (
   font-family: 'Playfair Display', serif;
   font-size: 14px;
   box-shadow: inset 1px 1px #fff, inset -1px -1px #888;
-  transition: all 0.1s ease-in-out;
 }
 
 .nav-btn-special {
     display: inline-block;
-  background-color: $primary;
-  border: 2px solid #fff;
+  background-color: #facc60;
+  border: 1px solid #fff;
   border-right-color: #888;
   border-bottom-color: #888;
   padding: 6px 12px;
@@ -59,9 +55,8 @@ $custom-theme-colors: (
   font-family: 'Playfair Display', serif;
   font-size: 16px;
   font-weight: bold;
-  box-shadow: inset 1px 1px #fff, inset -1px -1px #888;
-  transition: all 0.1s ease-in-out;
 }
+
 
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
